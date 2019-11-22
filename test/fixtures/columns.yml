@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bracket: one
+  tree_placement: 1
+  name: MyString
+  interactive: false
+
+two:
+  bracket: two
+  tree_placement: 1
+  name: MyString
+  interactive: false
