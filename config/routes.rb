@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   resources :users
-  resources :columns
-  resources :pairs
   resources :brackets
   resources :seeds
 

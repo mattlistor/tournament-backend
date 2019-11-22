@@ -20,28 +20,6 @@ ActiveRecord::Schema.define(version: 2019_10_16_173807) do
     t.index ["user_id"], name: "index_brackets_on_user_id"
   end
 
-  create_table "columns", force: :cascade do |t|
-    t.integer "bracket_id"
-    t.integer "tree_placement"
-    t.string "name"
-    t.boolean "interactive"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["bracket_id"], name: "index_columns_on_bracket_id"
-  end
-
-  create_table "pairs", force: :cascade do |t|
-    t.integer "bracket_id"
-    t.integer "top_seed_id"
-    t.integer "bottom_seed_id"
-    t.boolean "interactive"
-    t.integer "column_id"
-    t.integer "tree_placement"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["bracket_id"], name: "index_pairs_on_bracket_id"
-  end
-
   create_table "seeds", force: :cascade do |t|
     t.string "name"
     t.string "placement"
